@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gris-fondo);
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
+
+:root {
+  --gris-fondo: #f4f6f8;
+  --gris-texto: #4a5568;
+  --gris-oscuro: #2d3748;
+  --blanco: #ffffff;
+  
+  --azul-claro: #4a90e2;
+  --azul-suave: #63a4ff;
+  --celeste-clarito: #eef6ff;
+  --celeste-borde: #cbd5e1;
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 8%;
+  background-color: var(--blanco);
+  border-bottom: 2px solid var(--celeste-clarito);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--azul-claro);
+}
+
+.nlinks {
+    flex-direction: column;
+    gap: 10px;
+}
+.inciodesesion {
+    font-size: 0.85rem;
+    padding: 8px 15px;
+}
+
+
+.iniciodesesion {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  white-space: nowrap; /* Evita que el texto del botón se rompa en dos líneas */
+  transition: background-color 0.3s ease;
+}
+.iniciodesesion:hover {
+  background-color: var(--azul-suave);
+}
+.nav-derecha {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+
+.nlinks a {
+  text-decoration: none;
+  color: var(--gris-texto);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nlinks a:hover {
+  color: var(--azul-claro);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--celeste-clarito);
+  border-bottom: 1px solid #dbeafe;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+  color: var(--gris-texto);
+}
+
+
+.boton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: var(--azul-suave);
+}
+
+.boton-secundario {
+  background-color: var(--blanco);
+  color: var(--azul-claro);
+  border: 2px solid var(--azul-claro);
+}
+
+.boton-secundario:hover {
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+}
+
+
+.seccion {
+  padding: 70px 8%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion h2 {
+  font-size: 1.8rem;
+  color: var(--gris-oscuro);
+  margin-bottom: 15px;
+}
+
+.subtitulo-seccion {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+}
+
+
+.tarjetasgris {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjetas {
+  background-color: var(--blanco);
+  padding: 30px 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid var(--celeste-borde);
+}
+
+.tarjetas.icono {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.tarjetas h3 {
+  color: var(--azul-claro);
+  margin-bottom: 10px;
+}
+
+
+.seccion-destacada {
+  background-color: var(--blanco);
+  padding: 50px 8%;
+  border-top: 1px solid var(--celeste-clarito);
+  border-bottom: 1px solid var(--celeste-clarito);
+}
+
+.contenedor-datos {
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dato {
+  text-align: center;
+}
+
+.dato .numero {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--azul-claro);
+}
+
+.dato .etiqueta {
+  font-size: 0.95rem;
+  color: var(--gris-texto);
+}
+
+
+.caja-empresa {
+  background-color: var(--celeste-clarito);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid #dbeafe;
+}
+
+.caja-empresa p {
+  margin-bottom: 25px;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--blanco);
+  border-top: 1px solid var(--celeste-borde);
+  font-size: 0.9rem;
+}
+
+.footer .copy {
+  margin-top: 5px;
+  color: #94a3b8;
+}
+
+
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 5%;
+    text-align: center;
+    }
+}
