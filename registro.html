@@ -8,20 +8,34 @@
 </head>
 <body>
   <div class="visible" id="divregistro">
-    <h2>Registro</h2>
+    <div class="formulario">
+    <center><h2>Crear cuenta en AgroNova</h2>
     <input id="usuarioRegistro" placeholder="Nombre de usuario">
     <input id="correoRegistro" type="email" placeholder="Correo electrónico">
     <input type="password" id="passRegistro" placeholder="Contraseña">
+    <div class="terminos">
+        <input type="checkbox" id="terminos">
+        <p>Acepto los <a href="iniciodepagbrandon.html">Términos y condiciones.</a></p>
+    </div>
     <button onclick="registrarUsuario()" onclick="mostrarLogin()">Registrarse</button>
-    <button onclick="mostrarLogin()">Iniciar sesión</button>
+    <button onclick="mostrarLogin()">Iniciar sesión</button></center>
+    </div>
+    <div class="diseño">
+        <center><img src="Img/AgroNovaLOGO.png" src="#"></center>
+    </div>
   </div>
 
   <div class="oculto" id="divinicio">
+    <div class="formulario">
     <h2>Iniciar Sesión</h2>
     <input id="usuarioLogin" placeholder="Correo electrónico">
     <input type="password" id="passLogin" placeholder="Contraseña">
     <button onclick="iniciarSesion()">Ingresar</button>
     <button onclick="mostrarRegistro()">Registrarse</button>
+    </div>
+    <div class="diseño">
+
+    </div>
   </div>
 
   <div id="mensaje" class="mensaje"></div>

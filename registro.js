@@ -44,8 +44,6 @@ function iniciarSesion() {
   if (encontrado) {
     document.getElementById("usuarioLogin").value = "";
     document.getElementById("passLogin").value = "";
-    mensaje.textContent = "¡Inicio de sesión exitoso! Bienvenido.";
-    mensaje.style.color = "green";
   } else {
     mensaje.textContent = "Correo o contraseña incorrectos, o el usuario no existe.";
     mensaje.style.color = "red";

@@ -1,37 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 30px;
-  background-color: #f9f9f9;
+    background-image: url('Img/energia-eolica-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin: 30px;
+    background-color: #f9f9f9;
+    margin-left: 0;
 }
 
 h2 {
-  margin-top: 0;
-  color: #333;
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 4%;
+    font-size: 180%;
+    font-weight: lighter;
 }
 
 input {
-  display: block;
-  width: 90%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    display: block;
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 90%;
+    font-size: 100%;
+    padding: 2%;
+    margin-bottom: 4%;
 }
 
 button {
-  padding: 8px 15px;
-  cursor: pointer;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 2.5%;
+    width: 50%;
+    height: 90%;
+    font-size: 100%;
+    padding: 2%;
 }
 
 .mensaje {
-  font-weight: bold;
-  margin-top: 10px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .oculto {
-  display: none;
+    display: none;
+}
+
+.visible {
+    display: flex;
+    gap: 2%;
+}
+
+.formulario {
+    width: 49%;
+    background-color: aqua;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.diseño {
+    width: 49%;
+}
+
+.terminos{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.terminos input{
+    width: 10%;
+    border-radius: 2%;
+    border: 2px solid;
+    margin-top: 6%;
+    margin-right: 3%;
+}
+
+.terminos p{
+    margin-top: 8%;
+    white-space: nowrap;
+}
+
+.diseño img{
+    width: 50%;
+    height: fit-content;
+    margin-top: 20%;
 }
