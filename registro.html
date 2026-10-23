@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro e Inicio de Sesión</title>
+  <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+  <div class="visible" id="divregistro">
+    <h2>Registro</h2>
+    <input id="usuarioRegistro" placeholder="Nombre de usuario">
+    <input id="correoRegistro" type="email" placeholder="Correo electrónico">
+    <input type="password" id="passRegistro" placeholder="Contraseña">
+    <button onclick="registrarUsuario()" onclick="mostrarLogin()">Registrarse</button>
+    <button onclick="mostrarLogin()">Iniciar sesión</button>
+  </div>
+
+  <div class="oculto" id="divinicio">
+    <h2>Iniciar Sesión</h2>
+    <input id="usuarioLogin" placeholder="Correo electrónico">
+    <input type="password" id="passLogin" placeholder="Contraseña">
+    <button onclick="iniciarSesion()">Ingresar</button>
+    <button onclick="mostrarRegistro()">Registrarse</button>
+  </div>
+
+  <div id="mensaje" class="mensaje"></div>
+
+  <script src="registro.js"></script>
+
+</body>
+</html>
