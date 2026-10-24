@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 body {
-    background-image: url('Img/energia-eolica-1.jpg');
+    background-image: url('Img/viento.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@ body {
 
 h2 {
     margin-top: 0;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 4%;
     font-size: 180%;
     font-weight: lighter;
@@ -66,7 +66,7 @@ button {
 
 .formulario {
     width: 49%;
-    background-color: aqua;
+    background-color: rgba(192, 192, 192, 0.5);
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -100,4 +100,8 @@ button {
     width: 50%;
     height: fit-content;
     margin-top: 20%;
+}
+
+.terminos a{
+    color: #ffffff;
 }
