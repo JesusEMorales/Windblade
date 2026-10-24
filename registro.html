@@ -11,17 +11,18 @@
 <body>
   <div class="navbar">
     <div class="logo">
-      <img src="Img/logofullreal.png" alt="Virtual Tec">
+      <img src="Img/logoaspa.png" alt="Virtual Tec">
       <p><a href="#login" class="sesion" style="font-size: 19px; font-weight: bolder;">Inicio</a></p>
     </div>
 
     <div class="acceso">
-      <a href="#login" class="sesion" id="inico" style="font-size: 16px; font-weight: bolder;">Acceder</a>
+      <a href="registro.html" class="sesion" id="inico" style="font-size: 16px; font-weight: bolder;">Acceder</a>
     </div>
   </div>
   <div class="visible" id="divregistro">
     <div class="formulario" id="formregistro">
       <center>
+        <center><img src="Img/logofullreal.png" src="#" id="logogin"></center>
         <h2>Crear cuenta en AgroNova</h2>
         <input id="usuarioRegistro" placeholder="Nombre de usuario">
         <input id="correoRegistro" type="email" placeholder="Correo electrónico">
@@ -35,17 +36,17 @@
         <button onclick="mostrarLogin()">Iniciar sesión</button>
       </center>
     </div>
-    <div class="diseño" id="disregistro">
-      <center><img src="Img/logofullreal.png" src="#"></center>
-    </div>
   </div>
 
   <center><div class="oculto" id="divinicio">
     <div class="formulario" id="formlogin" style="display: block;">
       <center><img src="Img/logofullreal.png" src="#" id="logogin"></center>
       <h2>Iniciar Sesión</h2>
-      <input id="usuarioLogin" placeholder="Usuario">
-      <input type="password" id="passLogin" placeholder="Contraseña">
+      <input id="usuarioLogin" placeholder="Usuario" class="inicioinput">
+      <div class="espacio"></div>
+      <input type="password" id="passLogin" placeholder="Contraseña" class="inicioinput">
+      <div class="espacio"></div>
+      <div class="espacio"></div>
       <div id="message" class="message"></div>
       <button onclick="iniciarSesion()">Ingresar</button>
       <button onclick="mostrarRegistro()">Registrarse</button>
