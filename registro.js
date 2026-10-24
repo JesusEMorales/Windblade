@@ -5,10 +5,11 @@ function registrarUsuario() {
   const contraseña = document.getElementById("passRegistro").value;
   const correo = document.getElementById("correoRegistro").value;
   const mensaje = document.getElementById("mensaje");
+  const checkbox = document.getElementById("terminos");
 
-  if (usuarioEncontrado === "" || contraseña === "" || correo === "") {
-    mensaje.textContent = "Por favor completa todos los campos para registrarte.";
-    mensaje.style.color = "red";
+  if (usuarioEncontrado === "" || contraseña === "" || correo === "" || !checkbox.checked) {
+    mensaje.textContent = "ⓘ Por favor completa todos los campos para registrarte.";
+    mensaje.style.color = "#ffffff";
     return;
   }
 
@@ -19,8 +20,8 @@ function registrarUsuario() {
 
   listaUsuarios.push(nuevoUsuario);
 
-  mensaje.textContent = "¡Usuario registrado con éxito!";
-  mensaje.style.color = "green";
+  mensaje.textContent = "ⓘ Has sido registrado en AgroNova.";
+  mensaje.style.color = "#ffffff";
 
   document.getElementById("usuarioRegistro").value = "";
   document.getElementById("passRegistro").value = "";
@@ -30,7 +31,7 @@ function registrarUsuario() {
 function iniciarSesion() {
   const usuarioEncontrado = document.getElementById("usuarioLogin").value;
   const contraseña = document.getElementById("passLogin").value;
-  const mensaje = document.getElementById("mensaje");
+  const message = document.getElementById("message");
 
   let encontrado = false;
 
@@ -45,19 +46,21 @@ function iniciarSesion() {
     document.getElementById("usuarioLogin").value = "";
     document.getElementById("passLogin").value = "";
   } else {
-    mensaje.textContent = "Correo o contraseña incorrectos, o el usuario no existe.";
-    mensaje.style.color = "red";
+    message.textContent = "ⓘ Usuario o contraseña incorrectos, o el usuario no existe.";
+    message.style.color = "#ffffff";
   }
 }
 
 function mostrarLogin(){
     document.getElementById("divregistro").classList.add("oculto");
+    document.getElementById("divregistro").classList.remove("visible");
     document.getElementById("divinicio").classList.remove("oculto");
     document.getElementById("divinicio").classList.add("visible");
 }
 
 function mostrarRegistro(){
     document.getElementById("divinicio").classList.add("oculto");
+    document.getElementById("divinicio").classList.remove("visible");
     document.getElementById("divregistro").classList.remove("oculto");
     document.getElementById("divregistro").classList.add("visible");
 }

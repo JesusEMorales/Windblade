@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro e Inicio de Sesión</title>
   <link rel="stylesheet" href="registro.css">
 </head>
+
 <body>
+  <div class="navbar">
+    <div class="logo">
+      <!-- Reemplaza con la ruta real de tu logo -->
+      <img src="Img/logofullreal.png" alt="Virtual Tec">
+    </div>
+
+    <div class="acceso">
+      <a href="#login" class="sesion">Acceder</a>
+    </div>
+  </div>
   <div class="visible" id="divregistro">
-    <div class="formulario">
-    <center><h2>Crear cuenta en AgroNova</h2>
-    <input id="usuarioRegistro" placeholder="Nombre de usuario">
-    <input id="correoRegistro" type="email" placeholder="Correo electrónico">
-    <input type="password" id="passRegistro" placeholder="Contraseña">
-    <div class="terminos">
-        <input type="checkbox" id="terminos">
-        <p>Acepto los <a href="iniciodepagbrandon.html">Términos y condiciones.</a></p>
+    <div class="formulario" id="formregistro">
+      <center>
+        <h2>Crear cuenta en AgroNova</h2>
+        <input id="usuarioRegistro" placeholder="Nombre de usuario">
+        <input id="correoRegistro" type="email" placeholder="Correo electrónico">
+        <input type="password" id="passRegistro" placeholder="Contraseña">
+        <div class="terminos">
+          <input type="checkbox" id="terminos">
+          <p>Acepto los <a href="iniciodepagbrandon.html">Términos y condiciones.</a></p>
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+        <button onclick="registrarUsuario()" onclick="mostrarLogin()">Registrarse</button>
+        <button onclick="mostrarLogin()">Iniciar sesión</button>
+      </center>
     </div>
-    <button onclick="registrarUsuario()" onclick="mostrarLogin()">Registrarse</button>
-    <button onclick="mostrarLogin()">Iniciar sesión</button></center>
-    </div>
-    <div class="diseño">
-        <center><img src="Img/logofullreal.png" src="#"></center>
-    </div>
-  </div>
-
-  <div class="oculto" id="divinicio">
-    <div class="formulario">
-    <h2>Iniciar Sesión</h2>
-    <input id="usuarioLogin" placeholder="Correo electrónico">
-    <input type="password" id="passLogin" placeholder="Contraseña">
-    <button onclick="iniciarSesion()">Ingresar</button>
-    <button onclick="mostrarRegistro()">Registrarse</button>
-    </div>
-    <div class="diseño">
-
+    <div class="diseño" id="disregistro">
+      <center><img src="Img/logofullreal.png" src="#"></center>
     </div>
   </div>
 
-  <div id="mensaje" class="mensaje"></div>
+  <center><div class="oculto" id="divinicio">
+    <div class="formulario" id="formlogin" style="display: block;">
+      <center><img src="Img/logofullreal.png" src="#" id="logogin"></center>
+      <h2>Iniciar Sesión</h2>
+      <input id="usuarioLogin" placeholder="Usuario">
+      <input type="password" id="passLogin" placeholder="Contraseña">
+      <div id="message" class="message"></div>
+      <button onclick="iniciarSesion()">Ingresar</button>
+      <button onclick="mostrarRegistro()">Registrarse</button>
+    </div>
+  </div></center>
 
   <script src="registro.js"></script>
-
 </body>
+
 </html>

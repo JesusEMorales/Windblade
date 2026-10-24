@@ -12,6 +12,9 @@ body {
     margin: 30px;
     background-color: #f9f9f9;
     margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -27,9 +30,8 @@ input {
     width: 60%;
     margin-bottom: 10px;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 90%;
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
     font-size: 100%;
     padding: 2%;
     margin-bottom: 4%;
@@ -38,21 +40,23 @@ input {
 button {
     padding: 8px 15px;
     cursor: pointer;
-    background-color: #007BFF;
-    color: white;
+    background-color: #5fa8d3;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     display: block;
     margin-bottom: 2.5%;
     width: 50%;
-    height: 90%;
     font-size: 100%;
     padding: 2%;
+    border-radius: 10px;
+    border: solid 2px #5fa8d3;
 }
 
 .mensaje {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1%;
+    margin-bottom: 3%;
 }
 
 .oculto {
@@ -66,9 +70,38 @@ button {
 
 .formulario {
     width: 49%;
-    background-color: rgba(192, 192, 192, 0.5);
-    padding-top: 2%;
-    padding-bottom: 2%;
+    background-color: rgba(75, 73, 71, 0.5);
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-right: 2%;
+}
+
+.formulario input{
+    display: block;
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
+    font-size: 100%;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.formulario button{
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #5fa8d3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 2.5%;
+    width: 50%;
+    font-size: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    border: solid 2px #5fa8d3;
 }
 
 .diseño {
@@ -80,7 +113,7 @@ button {
     width: fit-content;
     margin: 0 auto;
     align-items: center;
-    margin-bottom: 6%;
+    margin-bottom: 0%;
 }
 
 .terminos input{
@@ -104,4 +137,78 @@ button {
 
 .terminos a{
     color: #ffffff;
+}
+
+.terminos p{
+    color: #ffffff;
+}
+
+input[type="checkbox"] {
+  accent-color: #5fa8d3; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8e2dc;
+  padding: 5px 10px;       
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+
+.logo img {
+  height: 40px;      
+  width: auto;
+  display: block;
+}
+
+.acceso {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 20px;
+  border-left: 1px solid #4f5d75; 
+}
+
+.sesion {
+  text-decoration: none;
+  font-family: sans-serif;   
+  font-size: 14px;
+  color: #4f5d75;            
+  font-weight: 500;
+}
+
+.sesion:hover {
+  color: #5fa8d3;            
+}
+
+img{
+    margin: 0;
+}
+
+#formlogin{
+   display: block;
+   align-items: center;
+   margin-left: 24%;
+}
+
+#formlogin img{
+    width: 25%;
+}
+
+#formlogin h2{
+    margin-top: 2%;
+}
+
+.mensaje{
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+.message{
+    margin-bottom: 2%;
 }
