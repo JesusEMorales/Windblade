@@ -347,6 +347,7 @@ body {
     gap: 1%;
     background-color: #ffffff;
     border-radius: 10px;
+    border: 2px solid #001d3d;
     width: 50%;
 }
 
@@ -391,6 +392,7 @@ body {
     background-color: #6E32C3;
     border-radius: 10px;
     width: 50%;
+    border: 2px solid #001d3d;
 }
 
 .igimg {
@@ -426,6 +428,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     width: 50%;
+    border: 2px solid #001d3d;
 }
 
 .ximg {
@@ -461,6 +464,7 @@ body {
     background-color: #e5383b;
     border-radius: 10px;
     width: 50%;
+    border: 2px solid #001d3d;
 }
 
 .ytimg {
