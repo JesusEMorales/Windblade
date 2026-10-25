@@ -141,6 +141,7 @@ body {
     margin-right: 9%;
     margin-top: 7%;
     border-radius: 12px;
+    border: solid 2px #dee2ff;
 }
 
 .info1texto:hover {
@@ -196,6 +197,7 @@ body {
     margin-left: 9%;
     margin-top: 7%;
     border-radius: 12px;
+    border: solid 2px #dee2ff;
 }
 
 .info2texto:hover {
@@ -336,4 +338,168 @@ body {
   flex-wrap: wrap; 
   gap: 20px;
   margin: 0 auto;
+}
+
+.fb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.fbimg {
+    width: auto;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.fbuser {
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.fbimg img {
+    width: 45px;
+}
+
+.fbuser p{
+    color: #3B5998;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2%;
+    gap: 2%;
+}
+
+.ig {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    background-color: #6E32C3;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.igimg {
+    width: auto;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.iguser {
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.igimg img {
+    width: 45px;
+}
+
+.iguser p{
+    color: #ffffff;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.ximg {
+    width: auto;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.xuser {
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.ximg img {
+    width: 45px;
+}
+
+.xuser p{
+    color: #000000;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+.yt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1%;
+    background-color: #e5383b;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.ytimg {
+    width: auto;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.ytuser {
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+.ytimg img {
+    width: 45px;
+}
+
+.ytuser p{
+    color: #ffffff;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+.eslogan {
+    background-color: #3a6ea5;
+    border-radius: 12px;
+    padding: 2%;
+    width: 80%;
+    color: #ffffff;
+}
+
+.eslogan h1 {
+    font-weight: 1000;
+}
+
+.eslogan:hover {
+    transform: translateY(-4px);
 }
