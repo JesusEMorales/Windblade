@@ -251,20 +251,21 @@ img{
   body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
   }
   .visible, .oculto {
-    width: 100vw;
-    height: calc(100vh - 60px);
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
   .formulario, #formlogin {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    min-height: calc(100vh - 60px);
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -279,5 +280,26 @@ img{
   }
   .formulario center, #formlogin center {
     width: 100%;
+  }
+  .diseño {
+    display: none;
+  }
+  .terminos {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .terminos input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px auto;
+    display: block;
+  }
+  .terminos p {
+    white-space: normal !important;
+    margin: 0;
   }
 }
