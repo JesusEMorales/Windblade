@@ -246,3 +246,38 @@ img{
     width: 100%;
     height: 10px;
 }
+
+@media only screen and (max-width: 430px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .visible, .oculto {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .formulario, #formlogin {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(75, 73, 71, 0.85);
+  }
+  .formulario input, .formulario button, #formlogin input, #formlogin button {
+    width: 85% !important;
+  }
+  .formulario center, #formlogin center {
+    width: 100%;
+  }
+}
