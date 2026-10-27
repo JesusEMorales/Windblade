@@ -43,8 +43,7 @@ function iniciarSesion() {
   }
 
   if (encontrado) {
-    document.getElementById("usuarioLogin").value = "";
-    document.getElementById("passLogin").value = "";
+    window.location.href = "indexlogeado.html";
   } else {
     message.textContent = "ⓘ Usuario o contraseña incorrectos, o el usuario no existe.";
     message.style.color = "#ffffff";
