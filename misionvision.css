@@ -215,3 +215,17 @@ h1 {
 .titulogrande:hover{
     transform: scale(1.2);
 }
+
+.valores{
+    display: flex;
+    gap: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.valor{
+    background-color: #023e8a;
+    width: 33%;
+    border-radius: 15px;
+}
