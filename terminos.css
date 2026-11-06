@@ -29,6 +29,7 @@ body {
 .boton-cerrar:hover {
     color: #00b4d8; 
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .contenido p{

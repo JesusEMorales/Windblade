@@ -41,6 +41,7 @@ body {
 
 .logo p:hover {
     color: #5fa8d3;
+    transition: transform 0.3s ease;
 }
 
 .acceso {
@@ -61,6 +62,7 @@ body {
 
 .sesion:hover {
     color: #5fa8d3;
+    transition: transform 0.3s ease;
 }
 
 .video {
@@ -147,15 +149,18 @@ body {
 
 .info1texto:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .info1img:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 .info1img img:hover,
 .info1img:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 
@@ -200,15 +205,18 @@ body {
 
 .info2texto:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .info2ing:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 .info2img img:hover,
 .info2img:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 .carrusel {
@@ -240,6 +248,7 @@ body {
 
 .carrusel-item:hover {
     transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .logosinfo {
@@ -256,6 +265,7 @@ body {
 
 .logosinfo:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 .logos {
@@ -310,14 +320,17 @@ body {
 
 .imago1 img:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .imago2 img:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .iso1 img:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .footer {
@@ -504,6 +517,7 @@ body {
 
 .eslogan:hover {
     transform: translateY(-4px);
+    transition: transform 0.3s ease;
 }
 
 html, body {
