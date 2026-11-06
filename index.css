@@ -531,6 +531,26 @@ html, body {
     color: #ffffff;
 }
 
+.ig:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.fb:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.yt:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.x:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 @media screen and (max-width: 430px) {
     html, body {
         margin: 0 !important;

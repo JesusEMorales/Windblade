@@ -117,6 +117,21 @@ body {
   margin: 0 auto;
 }
 
+.contenido h1:hover{
+    transform: scale(1.02);
+    transition: transform 0.1s ease;
+}
+
+.contenido h2:hover{
+    transform: scale(1.05);
+    transition: transform 0.1s ease;
+}
+
+.contenido p:hover{
+    transform: scale(1.05);
+    transition: transform 0.1s ease;
+}
+
 @media only screen and (max-width: 430px){
     .footer {
         width: 100% !important;
