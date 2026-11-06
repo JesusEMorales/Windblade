@@ -146,7 +146,7 @@ h1 {
 }
 
 .contenedor1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Img/mision.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Img/mision.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ h1 {
 }
 
 .contenedor2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Img/vision.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('Img/vision.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,15 +177,17 @@ h1 {
 
 .contenedor1:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .contenedor2:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .textomedio {
     padding: 2%;
-    background-color: #001d3d;
+    background-color: #003566;
     margin: 2%;
     border-radius: 15px;
     color: #ffffff;
@@ -210,10 +212,12 @@ h1 {
 .titulo:hover {
     color: #ffc600;
     transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .titulogrande:hover {
     transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .valores {
@@ -224,96 +228,115 @@ h1 {
 }
 
 .valor {
-    background-color: #023e8a;
+    background-color: #bbd0ff;
+    border: 4px solid #184e77;
     border-radius: 15px;
     font-family: sans-serif;
-    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .valorbajo {
-    background-color: #023e8a;
+    background-color: #bbd0ff;
+    border: 4px solid #184e77;
     border-radius: 15px;
     font-family: sans-serif;
     margin-left: 16.5%;
     width: 33%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .valoralto {
-    background-color: #023e8a;
+    background-color: #bbd0ff;
+    border: 4px solid #184e77;
     border-radius: 15px;
     font-family: sans-serif;
     margin-right: 16.5%;
     width: 33%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .valor p {
-    padding: 2%;
     font-weight: 700;
     font-family: sans-serif;
-    color: #ffffff;
+    color: #184e77;
+    padding: 2%;
 }
 
 .valor h3 {
     font-weight: 1000;
-    color: #ffffff;
+    color: #184e77;
+    text-align: center;
+    font-size: x-large;
 }
 
 .valor li {
-    color: #ffffff;
+    color: #184e77;
 }
 
 h3:hover {
-    color: #ffc600;
+    color: #153243;
 }
 
 li:hover {
-    color: #ffc600;
+    color: #153243;
 }
 
 li p:hover{
-    color: #ffc600;
+    color: #153243;
 }
 
 .valorbajo p {
-    padding: 2%;
     font-weight: 700;
     font-family: sans-serif;
-    color: #ffffff;
+    color: #184e77;
+    padding: 2%;
 }
 
 .valorbajo h3 {
     font-weight: 1000;
-    color: #ffffff;
+    color: #184e77;
+    text-align: center;
+    font-size: x-large;
 }
 
 .valorbajo li {
-    color: #ffffff;
+    color: #184e77;
 }
 
 .valoralto p {
-    padding: 2%;
     font-weight: 700;
     font-family: sans-serif;
-    color: #ffffff;
+    color: #184e77;
+    padding: 2%;
 }
 
 .valoralto h3 {
     font-weight: 1000;
-    color: #ffffff;
+    color: #184e77;
+    text-align: center;
+    font-size: x-large;
 }
 
 .valoralto li {
-    color: #ffffff;
+    color: #184e77;
 }
 
 .valores img{
     width: 70%;
-    margin-bottom: 3%;
+    height: 170px;          
+    object-fit: cover;      
     border-radius: 15px;
 }
 
 .valor:hover{
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .valorbajo:hover{
@@ -325,5 +348,32 @@ li p:hover{
 }
 
 .valores img:hover{
-    transform: translateY(4px);
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+}
+
+.valor .img-container {
+    margin-top: auto;     
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.deco{
+    width: 90%;
+    height: 5px;
+    background-color: #184e77;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.valoralto .img-container {
+    margin-top: auto;     
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.valorbajo .img-container {
+    margin-top: auto;     
+    text-align: center;
+    margin-bottom: 3%;
 }
