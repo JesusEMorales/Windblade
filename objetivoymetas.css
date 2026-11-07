@@ -239,6 +239,18 @@ h1 {
     transition: transform 0.5s ease;
 }
 
+.titulograndre{
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.titulogrande:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
 .carta2:hover,
 .carta22:hover,
 .carta222:hover,
@@ -490,12 +502,14 @@ h1 {
     min-height: 400px;
 }
 
-.image-column:hover, .image-column2:hover {
+.image-column:hover,
+.image-column2:hover {
     transform: translateX(15px);
     transition: transform 0.5s ease;
 }
 
-.image-column1:hover, .image-column3:hover {
+.image-column1:hover,
+.image-column3:hover {
     transform: translateX(-15px);
     transition: transform 0.5s ease;
 }
@@ -637,61 +651,143 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
 
-  .expli {
-    flex-direction: column !important;
-    width: 100% !important;
-  }
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
 
-  .textoexpli, .imgexpli {
-    width: 92% !important;
-    margin: 10px auto !important;
-  }
+    .image-column1,
+    .image-column3 {
+        margin-top: 8% !important;
+    }
 
-  .imgexpli {
-    height: 300px !important;
-  }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 92% !important;
+        margin: 0 auto !important;
+        box-sizing: border-box;
+        gap: 1.5rem;
+    }
 
-  .main-container {
-    flex-direction: column !important;
-    width: 100% !important;
-    padding: 0 15px !important;
-    margin: 15px 0 !important;
-    gap: 15px !important;
-  }
+    .textoexpli{
+        width: 96% !important;
+        margin: 2% !important;
+    }
 
-  .cards-column, .image-column, .image-column1, .image-column2, .image-column3 {
-    width: 100% !important;
-  }
+    .cards-column,
+    .image-column,
+    .image-column1,
+    .image-column2,
+    .image-column3 {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
 
-  .image-column, .image-column1, .image-column2, .image-column3 {
-    min-height: 280px !important;
-  }
+    .cards-column {
+        margin-bottom: 1.5rem !important;
+    }
 
-  h1 {
-    font-size: 32px !important;
-  }
+    .image-column,
+    .image-column1,
+    .image-column2,
+    .image-column3 {
+        height: 250px !important;
+        position: relative !important;
+        margin-bottom: 1.5rem !important;
+    }
 
-  .textoexpli h3 {
-    font-size: 15px !important;
-  }
+    .image-column img,
+    .image-column1 img,
+    .image-column2 img,
+    .image-column3 img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+    }
 
-  .image-overlay h1 {
-    font-size: 28px !important;
-  }
+    .imgexpli img {
+        width: 100% !important;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
 
-  .image-overlay h2 {
-    font-size: 14px !important;
-  }
+    h1 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        line-height: 1.2;
+        word-break: break-word;
+    }
 
-  .footer-p {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+
+    .image-overlay h1 {
+        font-size: clamp(1.3rem, 4.5vw, 1.75rem);
+        line-height: 1.2;
+    }
+
+    .image-overlay h2 {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    .footer-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 1rem 0;
+    }
+
+    .cardtitulo3 {
+        margin-top: 8%;
+    }
+
+    .cardtitulo{
+        margin-top: 8%;
+    }
+
+    .image-column:hover,
+    .image-column2:hover,
+    .image-column1:hover,
+    .image-column3:hover {
+        transform: scaleX(1.03) !important;
+        transition: transform 0.5s ease;
+    }
+
+    .carta1:hover,
+    .carta11:hover,
+    .carta111:hover,
+    .carta1111:hover,
+    .carta3:hover,
+    .carta33:hover,
+    .carta333:hover,
+    .carta3333:hover {
+        transform: scaleX(1.03) !important;
+        transition: transform 0.5s ease;
+    }
+
+    .carta2:hover,
+    .carta22:hover,
+    .carta222:hover,
+    .carta2222:hover,
+    .carta4:hover,
+    .carta44:hover,
+    .carta444:hover,
+    .carta4444:hover {
+        transform: scaleX(1.03) !important;
+        transition: transform 0.5s ease;
+    }
+
+    .imgexpli{
+        display: none !important;
+    }
+
 }
