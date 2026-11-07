@@ -333,6 +333,8 @@ li p:hover {
     height: 170px;
     object-fit: cover;
     border-radius: 15px;
+    border: 4px solid #184e77;
+    border-radius: 15px;
 }
 
 .valor:hover {
@@ -355,6 +357,21 @@ li p:hover {
     background-color: #ffee99;
     transform: translateY(-6px);
     transition: transform 0.3s ease;
+    border: 4px solid #cc9c00;
+    border-radius: 15px;
+}
+
+.valor:hover img{
+    border: 4px solid #cc9c00;
+    border-radius: 15px;
+}
+
+.valorbajo:hover img{
+    border: 4px solid #cc9c00;
+    border-radius: 15px;
+}
+
+.valoralto:hover img{
     border: 4px solid #cc9c00;
     border-radius: 15px;
 }
