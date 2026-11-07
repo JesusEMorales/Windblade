@@ -408,10 +408,12 @@ li p:hover {
 
 .valorbajo:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .valoralto:hover {
     transform: translateY(-6px);
+    transition: transform 0.3s ease;
 }
 
 .valores img:hover {
